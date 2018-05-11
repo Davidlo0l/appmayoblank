@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
-var autoprefixer  = require('gulp-autoprefixer');
+var autoprefixer  = require('gulp-autoprefixer'); // creamos variable 
 
 var paths = {
   sass: ['./scss/**/*.scss']
@@ -13,11 +13,11 @@ gulp.task('default', ['sass']);
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
     .pipe(sass({
-	  outputstyle :'extended',
+	  outputstyle :'extended', // agregamos sass  
 	  sourceComments : false
   }))
   	.pipe(autoprefixer({
-	  browsers:['last 2 versions','firefox >=6']
+	  browsers:['last 2 versions','firefox >=6']// agregamos el auto prefixer 
   }))
     .on('error', sass.logError)
     .pipe(gulp.dest('./www/css/'))
