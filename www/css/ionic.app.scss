@@ -21,22 +21,22 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-.platform-ios{
+.plaform-ios{
 	.bar-header{
-		background: chartreuse;
+		background-color: chartreuse;
 		.title{
-			color: indigo;
+			color: black;
 			font-weight: bold;
 			
 		}
 		
 	}
 }
-.platform-android{
+.plaform-android{
 	.bar-header{
-		background: chartreuse;
+		background-color: chartreuse;
 		.title{
-			color:chocolate ;
+			color: black;
 			font-weight: bold;
 			
 		}
